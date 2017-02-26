@@ -1,0 +1,1595 @@
+{
+	"variables": [],
+	"info": {
+		"name": "HW2",
+		"_postman_id": "50c8632e-25f8-a485-26a8-089ad19fb885",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " http://coronach-test.apigee.net/HW2/gets",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/gets",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using GET against gets"
+			},
+			"response": [
+				{
+					"id": "56484108-446a-4686-ab01-c4dd66964bdb",
+					"name": "GET /gets",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/gets",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "418",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:20:14 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a2-ueJjp3/dTBX060V6fvg4ZQ\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 75,
+					"body": "{\"message\":\"Name of sports team: No team entered!\",\"description\":\"get method\",\"headers\":{\"accept\":\"*/*\",\"accept-encoding\":\"gzip, deflate\",\"cache-control\":\"no-cache\",\"content-type\":\"application/json\",\"host\":\"coronach-test.apigee.net\",\"postman-token\":\"99f8fdd5-8412-4105-82cd-2f4c9d1ffcb7\",\"user-agent\":\"PostmanRuntime/3.0.11-hotfix.2\",\"x-forwarded-for\":\"24.8.227.17\",\"x-forwarded-port\":\"80\",\"x-forwarded-proto\":\"http\"}}"
+				}
+			]
+		},
+		{
+			"name": " http://coronach-test.apigee.net/HW2/gets",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/gets",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using POST against gets"
+			},
+			"response": [
+				{
+					"id": "d2cbad10-0af2-4606-87d5-37877c7de420",
+					"name": "POST /gets",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/gets",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Allow",
+							"value": "GET",
+							"name": "Allow",
+							"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:22:42 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 60,
+					"body": "{\"message\":\"Route defined in Swagger specification (/gets) but there is no defined post operation.\",\"allowedMethods\":[\"GET\"]}"
+				}
+			]
+		},
+		{
+			"name": " http://coronach-test.apigee.net/HW2/gets",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/gets",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using PUT against gets"
+			},
+			"response": [
+				{
+					"id": "abdc97f5-1225-4a18-83c1-6a2a33b76879",
+					"name": "PUT /gets",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/gets",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Allow",
+							"value": "GET",
+							"name": "Allow",
+							"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "124",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:23:35 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 70,
+					"body": "{\"message\":\"Route defined in Swagger specification (/gets) but there is no defined put operation.\",\"allowedMethods\":[\"GET\"]}"
+				}
+			]
+		},
+		{
+			"name": " http://coronach-test.apigee.net/HW2/gets",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/gets",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using DEL against gets"
+			},
+			"response": [
+				{
+					"id": "11398e27-c3fd-4541-a7e1-cfa35ccd45d5",
+					"name": "DEL /gets",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/gets",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Allow",
+							"value": "GET",
+							"name": "Allow",
+							"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "127",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:24:23 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 56,
+					"body": "{\"message\":\"Route defined in Swagger specification (/gets) but there is no defined delete operation.\",\"allowedMethods\":[\"GET\"]}"
+				}
+			]
+		},
+		{
+			"name": " http://coronach-test.apigee.net/HW2/posts",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/posts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using GET against posts"
+			},
+			"response": [
+				{
+					"id": "4f0d566d-20bf-4ef7-bd77-6b2a8f0582f5",
+					"name": "GET /posts",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/posts",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Allow",
+							"value": "POST",
+							"name": "Allow",
+							"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "126",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:25:30 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 148,
+					"body": "{\"message\":\"Route defined in Swagger specification (/posts) but there is no defined get operation.\",\"allowedMethods\":[\"POST\"]}"
+				}
+			]
+		},
+		{
+			"name": " http://coronach-test.apigee.net/HW2/posts",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/posts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using POST against posts"
+			},
+			"response": [
+				{
+					"id": "30e37ffe-7c58-4d09-aa9f-63cd2b738ccc",
+					"name": "POST /posts",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/posts",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "444",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:26:23 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1bc-Fvnzc0lzRWK4I+E/S4TN9g\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 110,
+					"body": "{\"message\":\"Sports team edited:  { name: 'dodgers' }\",\"description\":\"post method\",\"headers\":{\"accept\":\"*/*\",\"accept-encoding\":\"gzip, deflate\",\"cache-control\":\"no-cache\",\"content-length\":\"19\",\"content-type\":\"application/json\",\"host\":\"coronach-test.apigee.net\",\"postman-token\":\"a543b7ee-fb41-425c-8586-e702bb21fec5\",\"user-agent\":\"PostmanRuntime/3.0.11-hotfix.2\",\"x-forwarded-for\":\"24.8.227.17\",\"x-forwarded-port\":\"80\",\"x-forwarded-proto\":\"http\"}}"
+				}
+			]
+		},
+		{
+			"name": " http://coronach-test.apigee.net/HW2/posts",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/posts",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using PUT against posts"
+			},
+			"response": [
+				{
+					"id": "c4af7193-4175-4b5f-86db-a3833b5b4cdf",
+					"name": "PUT /posts",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/posts",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Allow",
+							"value": "POST",
+							"name": "Allow",
+							"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "126",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:26:58 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 58,
+					"body": "{\"message\":\"Route defined in Swagger specification (/posts) but there is no defined put operation.\",\"allowedMethods\":[\"POST\"]}"
+				}
+			]
+		},
+		{
+			"name": " http://coronach-test.apigee.net/HW2/posts",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/posts",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using DEL against posts"
+			},
+			"response": [
+				{
+					"id": "7d1f74ed-b444-4f4c-9500-2f17e7e6cc79",
+					"name": "DEL /posts",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/posts",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Allow",
+							"value": "POST",
+							"name": "Allow",
+							"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "129",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:27:47 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 61,
+					"body": "{\"message\":\"Route defined in Swagger specification (/posts) but there is no defined delete operation.\",\"allowedMethods\":[\"POST\"]}"
+				}
+			]
+		},
+		{
+			"name": " http://coronach-test.apigee.net/HW2/puts",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/puts",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using GET against puts"
+			},
+			"response": [
+				{
+					"id": "bc0d4796-03c0-48a9-baf5-c8b89b700e48",
+					"name": "GET /puts",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/puts",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Allow",
+							"value": "PUT",
+							"name": "Allow",
+							"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "124",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:28:42 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 69,
+					"body": "{\"message\":\"Route defined in Swagger specification (/puts) but there is no defined get operation.\",\"allowedMethods\":[\"PUT\"]}"
+				}
+			]
+		},
+		{
+			"name": " http://coronach-test.apigee.net/HW2/puts",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/puts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using POST against puts"
+			},
+			"response": [
+				{
+					"id": "926ea4cd-5ccb-454e-ba1d-ed3896d34637",
+					"name": "POST /puts",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/puts",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Allow",
+							"value": "PUT",
+							"name": "Allow",
+							"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:29:26 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 56,
+					"body": "{\"message\":\"Route defined in Swagger specification (/puts) but there is no defined post operation.\",\"allowedMethods\":[\"PUT\"]}"
+				}
+			]
+		},
+		{
+			"name": " http://coronach-test.apigee.net/HW2/puts",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/puts",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using PUT against puts"
+			},
+			"response": [
+				{
+					"id": "2627e5ad-353d-48f1-974d-3d4b49e3ec10",
+					"name": "PUT /puts",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/puts",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "444",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:29:50 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1bc-DikpXKtQBAvJ9ckuNIvcSQ\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 69,
+					"body": "{\"message\":\"Sports team created:  { name: 'dodgers' }\",\"description\":\"put method\",\"headers\":{\"accept\":\"*/*\",\"accept-encoding\":\"gzip, deflate\",\"cache-control\":\"no-cache\",\"content-length\":\"19\",\"content-type\":\"application/json\",\"host\":\"coronach-test.apigee.net\",\"postman-token\":\"ebfb3189-6082-49bb-8b66-f48ad4ac14b1\",\"user-agent\":\"PostmanRuntime/3.0.11-hotfix.2\",\"x-forwarded-for\":\"24.8.227.17\",\"x-forwarded-port\":\"80\",\"x-forwarded-proto\":\"http\"}}"
+				}
+			]
+		},
+		{
+			"name": " http://coronach-test.apigee.net/HW2/puts",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/puts",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using DEL against puts"
+			},
+			"response": [
+				{
+					"id": "fec48373-efa0-4b38-ae79-d4cd3ce7fe82",
+					"name": "DEL /puts",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/puts",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Allow",
+							"value": "PUT",
+							"name": "Allow",
+							"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "127",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:30:15 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 54,
+					"body": "{\"message\":\"Route defined in Swagger specification (/puts) but there is no defined delete operation.\",\"allowedMethods\":[\"PUT\"]}"
+				}
+			]
+		},
+		{
+			"name": " http://coronach-test.apigee.net/HW2/deletes",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/deletes",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using GET against deletes"
+			},
+			"response": [
+				{
+					"id": "dda817cb-0451-48e8-b9bc-eb6d881708d8",
+					"name": "GET /deletes",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/deletes",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Allow",
+							"value": "DELETE",
+							"name": "Allow",
+							"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "130",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:30:40 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 61,
+					"body": "{\"message\":\"Route defined in Swagger specification (/deletes) but there is no defined get operation.\",\"allowedMethods\":[\"DELETE\"]}"
+				}
+			]
+		},
+		{
+			"name": " http://coronach-test.apigee.net/HW2/deletes",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/deletes",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using POST against deletes"
+			},
+			"response": [
+				{
+					"id": "999a8ea5-2277-4a31-9066-83081e01a75d",
+					"name": "POST /deletes",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/deletes",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Allow",
+							"value": "DELETE",
+							"name": "Allow",
+							"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "131",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:31:26 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 57,
+					"body": "{\"message\":\"Route defined in Swagger specification (/deletes) but there is no defined post operation.\",\"allowedMethods\":[\"DELETE\"]}"
+				}
+			]
+		},
+		{
+			"name": " http://coronach-test.apigee.net/HW2/deletes",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/deletes",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using PUT against deletes"
+			},
+			"response": [
+				{
+					"id": "c1e5fa7b-b25c-48ab-a220-bae4ed5132a2",
+					"name": "PUT /deletes",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/deletes",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Allow",
+							"value": "DELETE",
+							"name": "Allow",
+							"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "130",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:31:58 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 56,
+					"body": "{\"message\":\"Route defined in Swagger specification (/deletes) but there is no defined put operation.\",\"allowedMethods\":[\"DELETE\"]}"
+				}
+			]
+		},
+		{
+			"name": " http://coronach-test.apigee.net/HW2/deletes",
+			"request": {
+				"url": " http://coronach-test.apigee.net/HW2/deletes",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"dodgers\"}"
+				},
+				"description": "using DEL against deletes"
+			},
+			"response": [
+				{
+					"id": "ae10d70a-b0b4-436e-98a1-f2bd1482eac1",
+					"name": "DEL /deletes",
+					"originalRequest": {
+						"url": " http://coronach-test.apigee.net/HW2/deletes",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"dodgers\"}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "442",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Feb 2017 04:32:24 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1ba-yDEpOwa5zTIolSJPG6UZDg\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 60,
+					"body": "{\"message\":\"Deleting this team: No team entered!\",\"description\":\"delete method\",\"headers\":{\"accept\":\"*/*\",\"accept-encoding\":\"gzip, deflate\",\"cache-control\":\"no-cache\",\"content-length\":\"19\",\"content-type\":\"application/json\",\"host\":\"coronach-test.apigee.net\",\"postman-token\":\"66aad8a2-f7d8-48cf-be7b-139e8bbebfa3\",\"user-agent\":\"PostmanRuntime/3.0.11-hotfix.2\",\"x-forwarded-for\":\"24.8.227.17\",\"x-forwarded-port\":\"80\",\"x-forwarded-proto\":\"http\"}}"
+				}
+			]
+		}
+	]
+}
