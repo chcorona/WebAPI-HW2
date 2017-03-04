@@ -1,0 +1,197 @@
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: HomeWork 2 App
+  description: using get, post, put and delete
+# during dev, should point to your local machine
+host: localhost:10010
+# basePath prefixes all resource paths 
+basePath: /
+# 
+schemes:
+  # tip: remove http to make production-grade
+  - http
+  - https
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+paths:
+  /hello:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: hello_world
+    get:
+      description: Returns 'Hello' to the caller
+      # used as the method name of the controller
+      operationId: hello
+      parameters:
+        - name: name
+          in: query
+          description: The name of the person to whom to say hello
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/HelloWorldResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse" 
+  /gets:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: HW2
+    get:
+      description: Returns the team name
+      # used as the method name of the controller    
+      operationId: gets
+      parameters:
+        - name: sportsTeam
+          in: query
+          description: enter the name of the team
+          required: false
+          type: string      
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/getsResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse" 
+  /posts:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: HW2
+    post:
+      description: Returns a sports team that was entered
+      # used as the method name of the controller
+      operationId: posts
+      parameters:
+        - name: sportsTeam
+          in: body
+          description: enter sports team name to edit
+          required: false
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/teamResponse"
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/postsResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"    
+  /puts:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: HW2
+    put:
+      description: Returns a sports team that was created
+      # used as the method name of the controller    
+      operationId: puts
+      parameters:
+        - name: sportsTeam
+          in: body
+          description: enter sports team name to be created
+          required: false
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/teamCreate"      
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/putsResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"             
+  /deletes:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: HW2
+    delete:
+      description: Returns the deleted team
+      # used as the method name of the controller    
+      operationId: deletes
+      parameters:
+        - name: sportsTeam
+          in: query
+          description: A sports team to delete
+          required: false
+          type: string      
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/deletesResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"  
+  /swagger:
+    x-swagger-pipe: swagger_raw
+# complex objects have schema definitions
+definitions:
+  HelloWorldResponse:
+    required:
+      - message
+    properties:
+      message: 
+        type: string
+  ErrorResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
+  getsResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string        
+  postsResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string      
+  putsResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string  
+  deletesResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string      
+  teamResponse:
+    required:
+      - name
+    properties:
+      name:
+        type: string   
+  teamCreate:
+    required:
+      - name
+    properties:
+      name:
+        type: string         
